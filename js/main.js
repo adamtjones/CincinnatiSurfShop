@@ -40,7 +40,8 @@ function addToCart(price,color) {
 	
 	subtotalBox.innerHTML = total;
 	totalBox.innerHTML = calculateFinalTotal();
-
+	var finalTotal = calculateFinalTotal();
+	totalBox.innerHTML = finalTotal.toFixed(2);
 }
 
 function calculateFinalTotal() {

@@ -8,15 +8,26 @@
 	<!--link-->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="https://use.fontawesome.com/ea5eeb1623.js"></script>
+<!--mobile menu information next-->
+<meta charset="utf-8">
+<meta name="description" content="Responsive Header Nav">
+
+<meta name="author" content="Treehouse">
+
+<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+<!--done-->
+
 </head>
 
 <body>
 	<main>
 		<header>
-			<div class="headline">
+			<div class="container">
+				<div class="headline">
 				<h1>Cincinnati Surf Shop</h1>
 			</div>
-			<div class="right" id='links'>
+			<div class="row">
+				<div class="hidden-xs" id='links'>
 				<ul>
 					<li><a href="about.html">About</a></li>
 					<li><a href="products.html">Products</a></li>
@@ -24,7 +35,22 @@
 					<li><a href="index.html">Home</a></li>
 				</ul>
 			</div>
+		</div>
 		</header>
+		<!--next is mobile menu stuff added, until the end of the nav-->
+		<div class="visible-xs hidden-sm hidden-md hidden-lg" id="linksButton">
+			<a id="logo" href="#"></a>
+		<nav>
+			<i class="fa fa-list"></i>
+				<ul class="duplicateLinks">
+					<li><a href="about.html">About</a></li>
+					<li><a href="products.html">Products</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="index.html">Home</a></li>
+				</ul>
+		</nav>
+
+	</div>
 		<div class="logo"><img src="images/logo2.png" id="mainLogo">
 		</div>
 		<!--<div class="container">
@@ -67,6 +93,8 @@
 				</section>
 			</div>
 		</header>-->
+		</div>
+
 		<footer>
 			<h4><em>Come surf around</h4></em>
 		</footer>

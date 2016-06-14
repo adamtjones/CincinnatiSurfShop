@@ -36,6 +36,10 @@ li {
 	display:block;
 	margin-top: 20px;
 }
+#linksButton {
+	text-align: center;
+}
+
 img#headshot {
 	width:21%;
 	margin:auto;
@@ -73,6 +77,7 @@ input[type=text] {
 	background-color: orange;
 	color:teal;
 	text-align: center;
+	width:100%;
 }
 .youContact {
 	border:2px solid orange;
@@ -157,7 +162,7 @@ a:hover {
 	cursor: pointer;
 }
 
-.row {
+.row1 {
 	text-align: center;
 	border: 2px solid orange;
 	width: 40%;
@@ -194,3 +199,41 @@ footer {
 		margin: 0% auto;
 	}
 }
+@media only screen and (max-width : 600px) {
+
+
+	#menu-icon {
+
+		display:inline-block;
+
+	}
+
+	nav ul, nav:active ul { 
+
+		display: none;
+		position: absolute;
+		padding: 20px;
+		background: teal;
+		border: 2px solid orange;
+		right: 20px;
+		top: 60px;
+		width: 20%;
+	}
+
+	nav li {
+
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+		color: orange;
+	}
+	nav a {
+		color: orange;
+	}
+
+	nav:hover ul {
+
+		display: block;
+
+	}
